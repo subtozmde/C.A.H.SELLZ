@@ -1,0 +1,190 @@
+/* Core Layout Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header & Menu Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    background-color: rgba(11, 11, 11, 0.9);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ff007f; /* Sp5der Signature Pink Tone */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff007f;
+}
+
+.btn-nav {
+    background: #fff;
+    color: #000 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Hero Display Banner */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle, #250012 0%, #0b0b0b 100%);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #ff007f;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 32px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    background-color: #e0006c;
+}
+
+/* Shop Section Grid Layout */
+.shop-container {
+    padding: 60px 5%;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Product Cards */
+.product-card {
+    background-color: #121212;
+    border: 1px solid #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: #ff007f;
+}
+
+.product-image-container {
+    width: 100%;
+    height: 320px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.price {
+    color: #ff007f;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-buy:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Footer Section Details */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #222;
+    background-color: #090909;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
